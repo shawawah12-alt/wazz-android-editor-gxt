@@ -88,7 +88,18 @@ buat Sergeanur yang sudah mengumpulkan dan mencocokkan hash CRC32 San Andreas
 dengan nama key aslinya. Jadi pas file SA dibuka di wazz, key yang tampil
 langsung berupa nama, bukan angka acak.
 
+## Source
+
+Source aplikasinya ada di folder `source-code`. Di dalamnya ada kode editor,
+parser dan writer GXT, tampilan aplikasi, resource dua bahasa, icon, serta
+daftar nama key buat GTA III, Vice City, dan San Andreas.
+
+Bagian utamanya ada di `source-code/java/com/zhawoilah/wgxt`. Representasi
+low-level class aplikasi juga disertakan di `source-code/low-level/smali` buat
+referensi kalau mau lihat struktur class sampai detailnya.
+
 ## Build
+
 APK siap pakai ada di halaman Releases.
 
 Minimal Android 7.0 (API 24).

@@ -1,6 +1,6 @@
 # wazz
 
-Editor file GXT buat Android. Kubuat biar kalau mau ganti teks GTA nggak perlu
+Editor file GXT buat Android. gw buat biar kalau mau ganti teks GTA nggak perlu
 pindah ke PC dulu. Buka `american.gxt`, cari teksnya, edit, terus ekspor lagi.
 Sesimpel itu.
 

@@ -65,13 +65,16 @@ Keterangan token di aplikasi ikut bahasa HP juga, bukan Inggris terus.
 
 ## Sedikit soal San Andreas
 
-GTA III dan Vice City masih nyimpen nama key yang gampang dibaca. San Andreas
-beda, key-nya disimpan sebagai hash CRC32. Makanya tanpa daftar nama, yang
-kelihatan cuma angka dan nyari teks tertentu bakal nyebelin.
+San Andreas nyimpen key teks sebagai hash CRC32, bukan nama biasa. Tapi di
+wazz kamu nggak bakal disuruh ngedit deretan angka hash itu. Aplikasinya sudah
+punya mekanisme bawaan yang langsung mencocokkan hash tersebut dan menampilkan
+nama key dalam bentuk huruf yang gampang dibaca.
 
-Terima kasih banyak buat [Sergeanur/GXT](https://github.com/Sergeanur/GXT).
-Daftar dari sana yang bantu nyocokin hash San Andreas ke nama key aslinya.
-Ini bagian penting banget buat dukungan SA di wazz.
+Mekanisme itu bisa ada berkat kerja dari
+[Sergeanur/GXT](https://github.com/Sergeanur/GXT). Terima kasih sebesar-besarnya
+buat Sergeanur yang sudah mengumpulkan dan mencocokkan hash CRC32 San Andreas
+dengan nama key aslinya. Jadi pas file SA dibuka di wazz, key yang tampil
+langsung berupa nama, bukan angka acak.
 
 ## Build
 
@@ -125,10 +128,16 @@ Indonesian explanations instead of the old English-only list.
 
 ## San Andreas keys
 
-San Andreas stores its text keys as CRC32 hashes. Big thanks to
-[Sergeanur/GXT](https://github.com/Sergeanur/GXT) for the name list used to map
-those hashes back to readable key names. It makes SA files much easier to work
-with.
+San Andreas stores text keys as CRC32 hashes instead of regular names. wazz
+already handles this inside the app: it matches those hashes automatically and
+shows readable key names, so users don't have to work with random-looking
+numbers.
+
+That mechanism is possible thanks to the work from
+[Sergeanur/GXT](https://github.com/Sergeanur/GXT). Huge thanks to Sergeanur for
+collecting and matching the San Andreas CRC32 hashes with their original key
+names. Because of that work, SA keys appear as readable names as soon as the
+file is opened in wazz.
 
 ## Credits
 

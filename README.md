@@ -1,6 +1,6 @@
 # wazz — editor GXT
 
-Editor file teks GTA yang bisa dipakai langsung dari Android. Release ini mempertahankan tampilan, ikon, parser, aset, dan alur aplikasi asli; yang diubah hanya kredit, bahasa tutorial token, dan package ID. Nggak perlu mindahin file ke PC cuma buat mengganti satu baris dialog, nama menu, atau tulisan lain di dalam game.
+Editor file teks GTA yang bisa dipakai langsung dari Android. Nggak perlu mindahin file ke PC cuma buat mengganti satu baris dialog, nama menu, atau tulisan lain di dalam game.
 
 > **Catatan:** wazz bukan aplikasi resmi Rockstar Games. Selalu simpan cadangan file GXT asli sebelum mulai ngedit.
 
@@ -120,4 +120,4 @@ GTA III and Vice City support still follows their own GXT formats; this particul
 
 ## License
 
-The release APK is a corrected build of the owner's original application. Files under `recovered-reference/` are provided for code inspection and are not a clean Android Studio project. Grand Theft Auto and related names belong to their respective owners.
+Grand Theft Auto and related names belong to their respective owners.

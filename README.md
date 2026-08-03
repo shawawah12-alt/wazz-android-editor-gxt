@@ -77,8 +77,6 @@ dengan nama key aslinya. Jadi pas file SA dibuka di wazz, key yang tampil
 langsung berupa nama, bukan angka acak.
 
 ## Build
-
-Repo ini berisi hasil decompile dari APK milikku sendiri sebagai referensi.
 APK siap pakai ada di halaman Releases.
 
 Minimal Android 7.0 (API 24).

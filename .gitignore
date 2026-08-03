@@ -1,0 +1,9 @@
+.gradle/
+.idea/
+local.properties
+**/build/
+*.iml
+wazz_task/
+release_fix/
+arta_fix/
+automation/

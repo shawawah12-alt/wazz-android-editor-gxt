@@ -1,120 +1,137 @@
-# wazz - editor gxt
+# wazz
 
-Aplikasi Android buat buka dan edit file teks GXT dari GTA III, Vice City, dan San Andreas.
+Editor file GXT buat Android. Kubuat biar kalau mau ganti teks GTA nggak perlu
+pindah ke PC dulu. Buka `american.gxt`, cari teksnya, edit, terus ekspor lagi.
+Sesimpel itu.
 
-Awalnya aplikasi ini dibuat karena edit satu atau dua tulisan di GTA lewat HP itu ribet. Biasanya file harus dipindah ke PC dulu, padahal kadang yang mau diganti cuma nama menu atau satu baris dialog. Di wazz, file bisa dibuka, diedit, lalu diekspor lagi langsung dari Android.
+Bisa dipakai buat GTA III, Vice City, dan San Andreas. GTA IV sama V nggak
+masuk karena format teksnya udah beda, bukan GXT model lama lagi.
+
+## Fitur
+
+- Buka file `.gxt` langsung dari penyimpanan HP
+- Cari key atau isi teks
+- Edit teks dan ekspor hasilnya
+- Support GTA III, Vice City, dan San Andreas
+- Ada sample kalau cuma mau nyoba
+- Bahasa Indonesia kalau bahasa HP Indonesia, sisanya pakai Inggris
+- Contekan token di menu About
 
 ## Cara pakai
 
-1. Siapkan file GXT dari game. File utamanya biasanya bernama `american.gxt`.
-2. Buka wazz dan pilih **Buka file .gxt**.
-3. Cari tulisan atau key yang mau diedit.
-4. Ketuk entrinya, ubah teks, lalu simpan.
-5. Tekan **Ekspor** untuk membuat file hasil edit.
-6. Backup file asli sebelum memasang file baru ke game.
+Buka aplikasi, pilih file GXT, terus cari entry yang mau diganti. Ketuk
+entry-nya, edit, simpan, lalu tekan Export. Backup file asli sebelum ditimpa,
+siapa tahu hasil editnya salah atau gamenya nggak mau baca.
 
-Kalau belum punya file GXT buat dites, pakai file contoh yang ada di halaman awal.
+File utama biasanya namanya `american.gxt`. Lokasinya beda-beda tergantung
+game dan versi yang dipasang, jadi cari di folder data game masing-masing.
 
-## Token teks
+## Token
 
-Tulisan di GTA kadang punya kode kecil seperti `~r~` atau `~n~`. Itu bukan teks rusak. Kode tersebut dipakai game buat mengatur warna, baris baru, dan beberapa hal lain.
+Token itu kode format yang ada di tengah teks. Jangan langsung dihapus karena
+ada yang ngatur warna, pindah baris, atau nampilin tombol kontrol.
 
-| Token | Kegunaan |
+| Token | Fungsi |
 |---|---|
 | `~n~` | Pindah baris |
-| `~w~` | Warna putih |
-| `~r~` | Warna merah |
-| `~g~` | Warna hijau |
-| `~b~` | Warna biru |
-| `~y~` | Warna kuning |
-| `~p~` | Warna ungu atau merah muda |
-| `~o~` | Warna oranye |
-| `~q~` | Warna merah muda terang |
-| `~l~` | Warna hitam |
-| `~z~` | Abu-abu atau putih lembut |
-| `~h~` | Membuat teks lebih terang |
-| `~s~` | Mengembalikan gaya teks |
-| `~a~` | Tempat untuk nilai teks |
-| `~1~` | Tempat untuk nilai angka |
-| `~k~` | Menampilkan tombol kontrol |
-| `~<~` dan `~>~` | Arah kiri dan kanan |
-| `~up~` dan `~down~` | Arah atas dan bawah |
+| `~w~` | Putih |
+| `~r~` | Merah |
+| `~g~` | Hijau |
+| `~b~` | Biru |
+| `~y~` | Kuning |
+| `~p~` | Ungu / pink |
+| `~o~` | Oranye |
+| `~q~` | Pink terang |
+| `~l~` | Hitam |
+| `~z~` | Abu-abu / putih lembut |
+| `~h~` | Highlight |
+| `~s~` | Balik ke style normal |
+| `~a~` | Placeholder teks |
+| `~1~` | Placeholder angka |
+| `~k~` | Tombol kontrol |
+| `~<~` | Kiri |
+| `~>~` | Kanan |
+| `~up~` | Atas |
+| `~down~` | Bawah |
 
-Contohnya:
+Contoh:
 
 ```text
 ~r~Gagal!~n~~w~Coba lagi.
 ```
 
-`Gagal!` akan berwarna merah. Setelah itu teks pindah ke baris baru dan `Coba lagi.` tampil dengan warna putih.
+`Gagal!` jadi merah, `~n~` bikin baris baru, lalu `Coba lagi.` balik putih.
+Keterangan token di aplikasi ikut bahasa HP juga, bukan Inggris terus.
 
-Sebaiknya jangan hapus token kalau masih dibutuhkan. Daftar token ini juga bisa dilihat dari menu **Tentang** di aplikasi. Penjelasannya otomatis memakai bahasa Indonesia kalau bahasa HP Indonesia. Selain itu, aplikasi memakai bahasa Inggris.
+## Sedikit soal San Andreas
 
-## Game yang didukung
+GTA III dan Vice City masih nyimpen nama key yang gampang dibaca. San Andreas
+beda, key-nya disimpan sebagai hash CRC32. Makanya tanpa daftar nama, yang
+kelihatan cuma angka dan nyari teks tertentu bakal nyebelin.
 
-- GTA III
-- GTA Vice City
-- GTA San Andreas
+Terima kasih banyak buat [Sergeanur/GXT](https://github.com/Sergeanur/GXT).
+Daftar dari sana yang bantu nyocokin hash San Andreas ke nama key aslinya.
+Ini bagian penting banget buat dukungan SA di wazz.
 
-Ketiga game itu sama-sama memakai GXT, tetapi susunan filenya tidak persis sama. Khusus San Andreas, key teks disimpan sebagai angka CRC32. wazz memakai daftar nama supaya angka tersebut bisa ditampilkan sebagai nama key yang lebih gampang dibaca.
+## Build
 
-GTA IV dan GTA V tidak didukung karena format teksnya sudah berbeda.
+Repo ini berisi hasil decompile dari APK milikku sendiri sebagai referensi.
+APK siap pakai ada di halaman Releases.
 
-## Terima kasih
+Minimal Android 7.0 (API 24).
 
-Terima kasih banyak buat [Sergeanur/GXT](https://github.com/Sergeanur/GXT). Project tersebut sangat membantu dalam mencocokkan hash CRC32 di GTA San Andreas dengan nama key aslinya. Tanpa daftar itu, banyak key San Andreas cuma akan terlihat sebagai angka dan bakal jauh lebih susah dicari.
+## Kredit
 
 Dibuat oleh **Zhawoilah [ ID 🇮🇩 ]**.
 
-Aplikasi ini tidak berafiliasi dengan Rockstar Games. Nama GTA dan aset terkait tetap milik pemiliknya masing-masing.
+Nggak berafiliasi dengan Rockstar Games. GTA tetap milik pemiliknya.
 
 ---
 
 # English
 
-wazz is an Android app for opening and editing GXT text files from GTA III, Vice City, and San Andreas.
+An Android GXT editor. I made it so small GTA text edits don't require moving
+the file to a PC first. Open `american.gxt`, find the text, edit it, and export
+the file again.
 
-It was made for small edits that should not require moving a file to a PC. Open the GXT file, find the entry, change the text, and export a new copy from your phone.
+It works with GTA III, Vice City, and San Andreas. GTA IV and V aren't
+supported because they use a different text format.
 
-## How to use it
+## Features
 
-1. Get the GXT file from your game. The main file is usually called `american.gxt`.
-2. Open wazz and tap **Open a .gxt file**.
-3. Find the text or key you want to change.
-4. Tap the entry, edit it, and save.
-5. Tap **Export** to create the edited file.
-6. Keep a backup of the original file before putting the new one into the game.
+- Open `.gxt` files from Android storage
+- Search by key or text
+- Edit entries and export the result
+- GTA III, Vice City, and San Andreas support
+- Built-in sample file
+- Indonesian UI on Indonesian devices, English everywhere else
+- Token guide in the About screen
 
-There is also a sample file on the home screen if you only want to try the editor.
+## Usage
 
-## Text tokens
+Open a GXT file, find the entry you need, tap it, edit the text, and export.
+Keep a backup of the original file before replacing it.
 
-GTA text often contains codes such as `~r~` and `~n~`. These codes control colours, line breaks, placeholders, and controller buttons. They are not broken text, so do not remove them unless you no longer need their effect.
+## Tokens
 
-For example:
+Tokens are formatting codes used inside game text. `~n~` starts a new line,
+`~r~` makes text red, `~w~` makes it white, and the other colour tokens work
+the same way. `~h~` highlights text, `~s~` resets the style, `~a~` and `~1~`
+are placeholders, while `~k~` is used for controls. The full list is in the
+table above and in the app.
 
-```text
-~r~Failed!~n~~w~Try again.
-```
+The token descriptions follow the phone language, so Indonesian devices get
+Indonesian explanations instead of the old English-only list.
 
-`Failed!` appears in red. The text then moves to a new line and `Try again.` appears in white.
+## San Andreas keys
 
-The full token list is available in the About screen. It follows the phone language, using Indonesian on Indonesian devices and English everywhere else.
+San Andreas stores its text keys as CRC32 hashes. Big thanks to
+[Sergeanur/GXT](https://github.com/Sergeanur/GXT) for the name list used to map
+those hashes back to readable key names. It makes SA files much easier to work
+with.
 
-## Supported games
-
-- GTA III
-- GTA Vice City
-- GTA San Andreas
-
-The three games use different versions of the GXT format. San Andreas stores text keys as CRC32 hashes, so wazz uses a name list to show readable key names where possible.
-
-GTA IV and GTA V are not supported because they use a different text format.
-
-## Thanks
-
-Big thanks to [Sergeanur/GXT](https://github.com/Sergeanur/GXT). That project is a huge help for matching GTA San Andreas CRC32 hashes with their original key names. Without it, many San Andreas entries would only appear as numbers and would be much harder to find.
+## Credits
 
 Made by **Zhawoilah [ ID 🇮🇩 ]**.
 
-This app is not affiliated with Rockstar Games. GTA and related assets belong to their respective owners.
+Not affiliated with Rockstar Games. GTA belongs to its respective owners.

@@ -1,10 +1,22 @@
-# wazz
+<p align="center">
+  <img src="assets/wazz-icon.png" width="180" alt="wazz icon">
+</p>
 
-Editor file GXT buat Android. gw buat biar kalau mau ganti teks GTA nggak perlu
+<h1 align="center">wazz</h1>
+
+<p align="center">
+  <a href="https://github.com/shawawah12-alt/wazz-editor-gxt/releases"><img src="https://img.shields.io/github/v/release/shawawah12-alt/wazz-editor-gxt?style=flat-square&color=2563eb" alt="Release"></a>
+  <a href="https://github.com/shawawah12-alt/wazz-editor-gxt/releases"><img src="https://img.shields.io/github/downloads/shawawah12-alt/wazz-editor-gxt/total?style=flat-square&color=16a34a" alt="Downloads"></a>
+  <img src="https://img.shields.io/badge/Android-7.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android 7.0+">
+  <img src="https://img.shields.io/badge/GTA-III%20%7C%20VC%20%7C%20SA-f59e0b?style=flat-square" alt="GTA III, Vice City, San Andreas">
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/shawawah12-alt/wazz-editor-gxt?style=flat-square&color=64748b" alt="License"></a>
+</p>
+
+Editor file GXT buat Android. gw buat biar kalau mau ganti teks GTA engga perlu
 pindah ke PC dulu. Buka `american.gxt`, cari teksnya, edit, terus ekspor lagi.
 Sesimpel itu.
 
-Bisa dipakai buat GTA III, Vice City, dan San Andreas. GTA IV sama V nggak
+Bisa dipakai buat GTA III, Vice City, dan San Andreas. GTA IV sama V engga
 masuk karena format teksnya udah beda, bukan GXT model lama lagi.
 
 ## Fitur
@@ -21,7 +33,7 @@ masuk karena format teksnya udah beda, bukan GXT model lama lagi.
 
 Buka aplikasi, pilih file GXT, terus cari entry yang mau diganti. Ketuk
 entry-nya, edit, simpan, lalu tekan Export. Backup file asli sebelum ditimpa,
-siapa tahu hasil editnya salah atau gamenya nggak mau baca.
+siapa tahu hasil editnya salah atau gamenya engga mau baca.
 
 File utama biasanya namanya `american.gxt`. Lokasinya beda-beda tergantung
 game dan versi yang dipasang, jadi cari di folder data game masing-masing.
@@ -66,7 +78,7 @@ Keterangan token di aplikasi ikut bahasa HP juga, bukan Inggris terus.
 ## Sedikit soal San Andreas
 
 San Andreas nyimpen key teks sebagai hash CRC32, bukan nama biasa. Tapi di
-wazz kamu nggak bakal disuruh ngedit deretan angka hash itu. Aplikasinya sudah
+wazz kamu engga bakal disuruh ngedit deretan angka hash itu. Aplikasinya sudah
 punya mekanisme bawaan yang langsung mencocokkan hash tersebut dan menampilkan
 nama key dalam bentuk huruf yang gampang dibaca.
 
@@ -85,7 +97,7 @@ Minimal Android 7.0 (API 24).
 
 Dibuat oleh **Zhawoilah [ ID 🇮🇩 ]**.
 
-Nggak berafiliasi dengan Rockstar Games. GTA tetap milik pemiliknya.
+Engga berafiliasi dengan Rockstar Games. GTA tetap milik pemiliknya.
 
 ---
 

@@ -57,15 +57,21 @@ Contoh: `~r~Gagal!~n~~w~Coba lagi.` akan menampilkan “Gagal!” berwarna merah
 - Grand Theft Auto: Vice City
 - Grand Theft Auto: San Andreas
 
-Format GXT tiap game nggak sepenuhnya sama. San Andreas juga menyimpan key sebagai CRC32, jadi nama key yang terbaca bergantung pada daftar nama yang tersedia.
+Format GXT tiap game nggak sepenuhnya sama. wazz ditujukan untuk tiga game era 3D di atas—jadi bukan cuma San Andreas, tetapi juga GTA III dan Vice City. San Andreas menyimpan key sebagai angka CRC32, sehingga nama key yang terbaca bergantung pada daftar nama yang tersedia.
+
+GTA IV dan GTA V tidak didukung. Keduanya memakai sistem/format teks yang berbeda dari GXT klasik yang ditangani aplikasi ini.
 
 ## Bahasa
 
 wazz mengikuti bahasa perangkat. Bahasa Indonesia memakai penjelasan token Indonesia, sedangkan perangkat dengan bahasa lain memakai Inggris. Jadi bagian tutorial nggak lagi nyangkut di bahasa Inggris saat UI sedang Indonesia.
 
-## Kredit
+## Kredit dan terima kasih
 
 Dibuat oleh **Zhawoilah [ ID 🇮🇩 ]**.
+
+**Shout-out dan terima kasih sebesar-besarnya untuk [Sergeanur/GXT](https://github.com/Sergeanur/GXT).** Riset dan tool tersebut membantu memetakan hash/angka CRC32 milik GTA San Andreas kembali menjadi nama key yang bisa dibaca manusia. Tanpa kerja Sergeanur, bagian key San Andreas bakal jauh lebih susah dipahami dan diedit.
+
+Dukungan GTA III dan Vice City tetap ditangani sebagai format GXT masing-masing; shout-out di atas secara khusus untuk pemetaan nama key CRC32 San Andreas.
 
 ---
 
@@ -100,9 +106,17 @@ A small Android editor for GTA text files. It saves you from moving a file to a 
 
 Example: `~r~Failed!~n~~w~Try again.` shows “Failed!” in red, starts a new line, and returns to white for “Try again.”
 
-## Credits
+## Supported games
+
+wazz targets the three classic 3D-era games: **GTA III, Vice City, and San Andreas**—not San Andreas alone. Their GXT formats are not identical, and San Andreas additionally stores keys as CRC32 hashes. GTA IV and GTA V are not supported because they use a different text system/format.
+
+## Credits and thanks
 
 Made by **Zhawoilah [ ID 🇮🇩 ]**.
+
+**A huge shout-out and heartfelt thanks to [Sergeanur/GXT](https://github.com/Sergeanur/GXT).** That work helps map GTA San Andreas CRC32 hashes back to human-readable key names, making SA text much easier to understand and edit.
+
+GTA III and Vice City support still follows their own GXT formats; this particular acknowledgement is for the San Andreas CRC32 name mapping.
 
 ## License
 
